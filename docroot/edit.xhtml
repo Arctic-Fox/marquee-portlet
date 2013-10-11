@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+	<ice:portlet>
+		<ice:form>
+			Message to display:
+			<ice:inputTextarea id="enterMessage" partialsubmit="true" style="width:250;height=200;" value="#{messageBacking.message}"/>
+			<p/>
+			<ice:commandButton action="#{messageBacking.apply}" name="btnSave" type="submit" value="Save"/> 
+		</ice:form>
+	</ice:portlet>
+</f:view>
